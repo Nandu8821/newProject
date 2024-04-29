@@ -58,7 +58,8 @@ const Navbar = () => {
             <div className=" w-28  ">
               <Link to="/">
                 <img
-                  src="/images/home-1/brand-1.png"
+                style={{marginLeft:"20px" ,width:"100px",marginTop:"10px"}}
+                  src="/images/inner/Logo.png"
                   className="block lg:hidden "
                   alt="Royella_website_logo"
                 />

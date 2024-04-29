@@ -14,6 +14,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { Link } from "react-router-dom";
 import FsLightbox from "fslightbox-react";
+
 const About = () => {
   const [setCurrentSlide] = useState(0);
   // const [setLoaded] = useState(false);
@@ -664,31 +665,37 @@ const About = () => {
     //     </section>
     //   </div>
     // </section>
+  
 
+
+
+
+    ////////////////////////////////   
+
+    
     <>
 
-
-      <section style={{ border: "2px solid " }}>
-        <div style={{ border: "1px solid " }}>
-          <img src="/images/inner/night.jpg" alt="" style={{ width: "100%", height: "600px" }} />
-          <span style={{ position: "absolute", marginTop: "-400px", marginLeft: "100px", fontSize: "50px", color: "white" }}>WHO WE ARE </span>
-          <p style={{ position: "absolute", marginTop: "-300px", color: "white", marginLeft: "100px" }}>Our diverse technical expertise and practical business experience helps us understand your ideas and inventions. We serve a collage of technical fields, including pharmaceuticals, chemicals, electronics, semiconductors,
+      <section  className="section1" style={{ border: "2px solid " }}>
+        <div  style={{ border: "1px solid " }}>
+          <img className="bannerImg" src="/images/inner/night.jpg" alt=""  />
+          <span className="bannerTxt1" >WHO WE ARE </span>
+          <p className="bannerTxt2" >Our diverse technical expertise and practical business experience helps us understand your ideas and inventions. We serve a collage of technical fields, including pharmaceuticals, chemicals, electronics, semiconductors,
             fast-moving consumer goods, luxury goods and technologically advanced startups</p>
-          <button style={{ position: "absolute", marginTop: "-230px", color: "red", marginLeft: "100px", padding: "10px", backgroundColor: "white", paddingLeft: "30px", paddingRight: "30px" }}>Contact Us</button>
+          <button className="bannerBtn" >Contact Us</button>
         </div>
       </section>
 
 
 
 
-      <section style={{ width: "100%", height: "180px", display: "flex", justifyContent: "space-between" }} >
-        <div style={{ fontSize: "30px", marginLeft: "100px", marginTop: "25px" }}>
+      <section  className="section2"  >
+        <div className="section2Txt1" >
           CITADEL IP SERVICES
-          <p style={{ marginLeft: "130px" }}> &</p>
+          <p  className="symbol" > &</p>
           <span style={{ marginLeft: "25px" }}>TECHNOLOGIES</span>
         </div>
 
-        <div style={{ width: "800px" }}>
+        <div className="section2Txt2" >
           <p style={{ marginTop: "35px", opacity: "0.7", }}>Citadel IP Services & Technologies is a leading intellectual property
             services company that helps clients protect and monetize their innovations. We offer a range of services, including patent search, drafting, filing, prosecution, licensing
             , litigation support, trademark registration, and enforcement.</p>
@@ -696,19 +703,22 @@ const About = () => {
 
       </section>
 
-      <section style={{ width: "100%", height: "800", display: "flex", justifyContent: "space-around", marginLeft: "" }}>
-        <div>
-          <img src="/images/inner/law.jpg" style={{ width: "550px", height: "600px", marginLeft: "0px" }} />
 
-          <span style={{ position: "absolute", marginTop: "-450px", color: "white", marginLeft: "25px", fontSize: "50px" }}>  WHERE LAW <br /><span style={{ marginLeft: "50px" }}>MEETS</span>  <br /> TECHNOLOGY</span>
+
+      <section  className="section3" >
+        <div className="section3img">
+          <img src="/images/inner/law.jpg"  />
+
+          <span className="meetsTxt" >  WHERE LAW <br /><span  >MEETS</span>  <br /> TECHNOLOGY</span>
         </div>
-        <div style={{ width: "100%", backgroundColor: "#000010 ", marginLeft: "px" }}>
-          <p style={{ position: "relative", color: "white", fontWeight: "bold", marginTop: "40px", marginLeft: "50px", width: "800px", fontSize: "15px" }}>OUR MISSION IS TO SERVE AS TRUSTED, EXPERT ADVISORS TO ORGANIZATIONS AROUND THE WORLD FACING <p></p> HIGH-STAKES SITUATIONS THAT DEMAND URGENT ATTENTION, EXCEPTIONAL KNOWLEDGE, <p style={{ marginLeft: "70px" }}>STAUNCH INTEGRITY AND OBJECTIVE, CLEAR-CUT ANALYSIS AND ADVICE</p></p>
-          <div style={{ width: "790px", height: "400px", marginTop: "-30px", backgroundColor: "#424242", marginLeft: "50px", marginTop: "40px" }}>
-            <div style={{ width: "750px", height: "150px", marginLeft: "30px", marginTop: "" }}>
-              <p style={{ marginTop: "0px", position: "relative", color: "white", fontSize: "15px" }}><br />Our team of experienced professionals includes patent attorneys, patent agents, trademark attorneys, trademark agents, engineers, and paralegals. They have expertise in various domains, such as biotechnology, chemistry, computer science, electrical engineering, mechanical engineering, pharmaceuticals, and telecommunications.</p><br /><br />
-              <p style={{ marginTop: "0px", position: "relative", color: "white", fontSize: "15px" }}>Our team has been actively involved in business and research at all levels. Most of our professionals have worked at the forefront of product development, so they understand your business needs. Others have participated in cutting-edge research and development, at globally renowned companies and have witnessed how inventions propel businesses forward.</p><br /><br />
-              <p style={{ marginTop: "0px", position: "relative", color: "white", fontSize: "15px" }}>Members of our firm have been involved in leading research efforts in the areas of plant-related genetics, energy management, semiconductors and other ground-breaking innovations. When you work with our attorneys, you gain a partner who is not only abreast with the intricacies of intellectual property law, but also understands your industry, business and technical background at more than just a perfunctory level.</p>
+
+        <div className="section3Txt" >
+          <p className="section3P1" >OUR MISSION IS TO SERVE AS TRUSTED, EXPERT ADVISORS TO ORGANIZATIONS AROUND THE WORLD FACING  HIGH-STAKES SITUATIONS THAT DEMAND URGENT ATTENTION, EXCEPTIONAL KNOWLEDGE, <p  className="spaceTxt" >STAUNCH INTEGRITY AND OBJECTIVE, CLEAR-CUT ANALYSIS AND ADVICE</p></p>
+          <div className="section3TxtBackGroundcolor"  >
+            <div className="section3RightTxt" >
+              <p ><br />Our team of experienced professionals includes patent attorneys, patent agents, trademark attorneys, trademark agents, engineers, and paralegals. They have expertise in various domains, such as biotechnology, chemistry, computer science, electrical engineering, mechanical engineering, pharmaceuticals, and telecommunications.</p><br /><br />
+              <p className="spaceclass1">Our team has been actively involved in business and research at all levels. Most of our professionals have worked at the forefront of product development, so they understand your business needs. Others have participated in cutting-edge research and development, at globally renowned companies and have witnessed how inventions propel businesses forward.</p><br /><br />
+              <p  className="spaceclass2">Members of our firm have been involved in leading research efforts in the areas of plant-related genetics, energy management, semiconductors and other ground-breaking innovations. When you work with our attorneys, you gain a partner who is not only abreast with the intricacies of intellectual property law, but also understan your industry, business and technical background at more than just a perfunctory .</p>
 
             </div>
           </div>
@@ -716,20 +726,20 @@ const About = () => {
       </section>
 
 
-      <section style={{ width: "100%", height: "270px" }}>
-        <div><br />
-          <img src="/images/inner/bulding.jpg" style={{ width: "300px", marginLeft: "80px" }} />
-          <div></div>
-          <p style={{ width: "800px", marginLeft: "420px", marginTop: "-190px", opacity: "0.7" }}>At Citadel IP, we believe that intellectual property is a valuable asset that can give our clients a competitive edge in the market.
+      <section  className="section4" >
+        <div  className="section4all"><br />
+          <img src="/images/inner/bulding.jpg"  />
+          
+          <p >At Citadel IP, we believe that intellectual property is a valuable asset that can give our clients a competitive edge in the market.
             We strive to help our clients maximize the value of their intellectual property and achieve their business objectives. Whether you are an individual inventor,
             a startup, a small business, or a large corporation,
             we are here to assist you with all your intellectual property needs.</p>
 
-          <button style={{ marginLeft: "420px", marginTop: "40px", backgroundColor: "#000010", paddingLeft: "60px", paddingRight: "60px", color: "white", padding: "13px" }}>Contact Us</button>
+          <button  className="section4Btn" >Contact Us</button>
         </div>
       </section>
 
-      <section style={{ width: "100%", height: "400px" }}>
+      <section  className="section5" >
         <div style={{ width: "88%", height: "60px", backgroundColor: "#450B0F", marginLeft: "76px" }}>
           <br /><p style={{ fontSize: "22px", color: "white", marginLeft: "140px", marginTop: "-10px", fontWeight: "bold" }}>SUBSCRIBE FOR LATEST TECHNOLOGY & INTELLECTUAL PROPERTY UPDATES</p>
         </div>
@@ -747,7 +757,7 @@ const About = () => {
         </div>
       </section>
 
-      <section style={{
+      <section  className="section6" style={{
         backgroundColor: "#424241", display: "flex", justifyContent: "space-around",
         opacity: " 0.95",
         transition: "background 0.3s", borderRadius: " 0.2s", opacity: "0.3s", width: "100%", height: "800px",
@@ -804,7 +814,7 @@ const About = () => {
 
 
 
-      <section style={{ width: "100%", height: "250px", backgroundColor: "#7A7A7A", display: "grid", gridTemplateColumns: "auto auto auto" }}>
+      <section  className="section7" style={{ width: "100%", height: "250px", backgroundColor: "#7A7A7A", display: "grid", gridTemplateColumns: "auto auto auto" }}>
         <div style={{ width: "400px", height: "300px", backgroundColor: "", }}>
           <div>
             <a ><img src="/images/inner/Logo.png" style={{ width: "150px", marginTop: "50px", marginLeft: "70px" }} />  </a>
@@ -852,7 +862,7 @@ const About = () => {
         </div>
       </section>
 
-      <section style={{width:"100%" ,height:"50px" ,backgroundColor:"#000" ,}}>
+      <section   className="section8" style={{width:"100%" ,height:"50px" ,backgroundColor:"#000" ,}}>
       <div style={{color:"white" ,padding:"10px ",display:"flex" ,justifyContent:"",marginLeft:"140px"}}>
       <a href="#"> About </a>&nbsp;&nbsp;&nbsp;&nbsp;
       <a href="#"> Privacy </a>&nbsp;&nbsp;&nbsp;&nbsp;

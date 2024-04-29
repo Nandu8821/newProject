@@ -47,7 +47,7 @@ const Navbar4 = () => {
           <div className=" w-48 lg:w-52 lg:p-4 hidden lg:block">
             <Link to="/">
               <img
-                src="/images/home-4/logo.png"
+                src="/images/inner/Logo.png"
                 className="dark:hidden"
                 alt="website_logo"
               />
